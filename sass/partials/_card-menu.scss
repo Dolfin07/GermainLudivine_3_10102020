@@ -1,0 +1,88 @@
+@mixin plat {
+    .plat {
+        position: relative;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: .7rem .1rem;
+        margin: .9rem;
+        h3 {
+            font-weight: 500;
+            padding-left: .5rem;
+            margin-top: 0;
+            margin-bottom: .2rem;
+        }
+        .info {
+            display: inline-block;
+            padding-left: .5rem;
+            font-size: .95rem;
+            width: 85%;
+        }
+        .prix {
+            position: absolute;
+            font-weight: bold;
+            right: 1.2rem;
+            bottom: .5rem;
+            font-size: .95rem;
+           
+        }
+        &:hover {
+            .info {
+                 overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+main{
+    img {
+        width: 100%;
+    }
+    .container{
+        position: relative;
+        background-color: $color-bg;
+        border-radius: 40px 40px 0 0;
+        margin-top: -3.7rem;
+        padding-bottom: 4rem;
+        @include gradient-heart;
+        .container-heart {
+            top: 2rem;
+            right: 3.5rem;
+            .fa-empty, .fa-gradient {
+                font-size: 1.6rem;
+            }
+        }
+        h1 {
+            padding-left: 1rem;
+            padding-top: 1.5rem;
+            font: {
+                family: 'Shrikhand', cursive; 
+                weight: 500;
+                size: 1.7rem;
+            }
+        }
+        .container-titre {
+            display: inline-block;
+            width: 40px;
+            overflow: visible;
+            border-bottom: 3px solid $tertiary;
+            margin-left: 1rem;
+            h2 {
+                margin-bottom: 0.3rem;
+                font: {
+                    weight: 200;
+                    size: 1rem;
+                }
+            }
+        }
+        @include plat;
+    }
+    .btn {
+        padding: 1rem 3rem;
+        @include button-color(#fff, $gradient);
+        @include button-color-hover;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+    
+}

@@ -1,0 +1,161 @@
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+header img {
+  display: block;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+  margin-bottom: .9rem; }
+
+header .fa-arrow-left {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 1rem; }
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 0; }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-left: 1rem; }
+  footer ul {
+    padding-left: 1rem; }
+    footer ul li {
+      list-style: none;
+      padding-bottom: .5rem; }
+      footer ul li a {
+        color: #fff;
+        text-decoration: none; }
+      footer ul li .fas {
+        font-size: .8rem;
+        padding-right: .5rem; }
+
+@media all and (min-width: 768px) {
+  footer {
+    text-align: center; }
+    footer h2 {
+      font-size: 1.25rem; } }
+main img {
+  width: 100%; }
+main .container {
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  margin-top: -3.7rem;
+  padding-bottom: 4rem; }
+  main .container .container-heart {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    bottom: 1.5rem; }
+    main .container .container-heart .fa-empty {
+      font-size: 1.5rem;
+      position: relative;
+      -webkit-text-stroke: 1px white; }
+    main .container .container-heart .fa-gradient {
+      font-size: 1.5rem;
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 1px white;
+      -webkit-text-fill-color: transparent; }
+    main .container .container-heart .fa-gradient:hover {
+      opacity: 1;
+      transition: opacity 1.5s;
+      /*si bug, mettre transition; opacity 1s; ds :hover */ }
+  main .container .container-heart {
+    top: 2rem;
+    right: 3.5rem; }
+    main .container .container-heart .fa-empty, main .container .container-heart .fa-gradient {
+      font-size: 1.6rem; }
+  main .container h1 {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+    font-size: 1.7rem; }
+  main .container .container-titre {
+    display: inline-block;
+    width: 40px;
+    overflow: visible;
+    border-bottom: 3px solid #99E2D0;
+    margin-left: 1rem; }
+    main .container .container-titre h2 {
+      margin-bottom: 0.3rem;
+      font-weight: 200;
+      font-size: 1rem; }
+  main .container .plat {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: .7rem .1rem;
+    margin: .9rem; }
+    main .container .plat h3 {
+      font-weight: 500;
+      padding-left: .5rem;
+      margin-top: 0;
+      margin-bottom: .2rem; }
+    main .container .plat .info {
+      display: inline-block;
+      padding-left: .5rem;
+      font-size: .95rem;
+      width: 85%; }
+    main .container .plat .prix {
+      position: absolute;
+      font-weight: bold;
+      right: 1.2rem;
+      bottom: .5rem;
+      font-size: .95rem; }
+    main .container .plat:hover .info {
+      overflow: hidden;
+      text-overflow: ellipsis; }
+main .btn {
+  padding: 1rem 3rem;
+  display: block;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 1.5rem;
+  margin: auto;
+  box-shadow: 0 0.3rem 0.7rem gainsboro;
+  font-size: 1rem;
+  margin-top: 3rem; }
+  main .btn:hover {
+    box-shadow: 0 0.6rem 0.4rem gainsboro;
+    background: linear-gradient(#ff93e1, #a16be0); }
+
+.plats {
+  margin-top: .5rem; }
+
+.desserts {
+  margin-top: 1rem; }
+
+footer {
+  padding-top: .5rem;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=palette-gout.css.map */

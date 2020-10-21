@@ -9,9 +9,9 @@
     box-shadow: 0 .3rem .7rem $color-shadow;
 }
 
-@mixin button-color_hover {
+@mixin button-color-hover {
      &:hover {
-        box-shadow: 0 .6rem .4rem $color-shadow-dark;
+        box-shadow: 0 .6rem .4rem $color-shadow;
         background: $gradient-light;
     }
 }
