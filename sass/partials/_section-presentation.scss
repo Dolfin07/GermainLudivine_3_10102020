@@ -1,0 +1,70 @@
+@mixin ajout-chiffre ($chiffre){
+    &:before {
+        content: $chiffre;
+        color:#fff;
+        font-size: .7rem;
+        position: absolute;
+        left: -.5rem;
+        padding: .3rem .5rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0.2rem;
+        background-color: $primary;
+        border-radius: 2rem;
+    }
+}
+
+.presentation {
+    margin-top: 3rem;
+    h2 {
+        padding-left: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    div {
+        margin-left: .5rem;
+        button {
+            @include button-color(#000, $color-bg);
+            width: 90%;
+            position: relative;
+            padding: 1.7rem 2.5rem 1.7rem 0;
+            margin-bottom: 1.2rem;
+            .fas {
+                margin-top: .5rem;
+                color:gray;
+                padding-right: 1rem;
+                margin-left: 0;
+            }
+            .fa-mobile-alt {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+            .fa-store {
+                color: $primary; 
+                font-size: 1.1rem;
+            }
+            span {
+                padding-top: 1.5rem;
+                padding-bottom: 1.2rem;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .choisir button {
+            @include ajout-chiffre("1");
+    }
+    .composer button {
+        @include ajout-chiffre("2");
+    }
+    .deguster button {
+        @include ajout-chiffre("3");
+        background-color: $color-bg-light;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .presentation h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}

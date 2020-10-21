@@ -1,0 +1,14 @@
+/*
+Charte graphique :
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+
+primaire : #9356DC;
+secondaire : #FF79DA;
+Tertiaire : #99E2D0;*/
+
+.essai::before {
+    font-family: "Font Awesome" !important;
+    content: "\f3c5"; 
+}

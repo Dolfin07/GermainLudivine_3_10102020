@@ -1,0 +1,17 @@
+@mixin button-color($color-text, $bg) {
+    display: block;
+    color: $color-text;
+    font-family: $texte;
+    background: $bg;
+    border: none;
+    border-radius: 1.5rem;
+    margin: auto;
+    box-shadow: 0 .3rem .7rem $color-shadow;
+}
+
+@mixin button-color_hover {
+     &:hover {
+        box-shadow: 0 .6rem .4rem $color-shadow-dark;
+        background: $gradient-light;
+    }
+}

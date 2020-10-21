@@ -1,0 +1,52 @@
+//header
+
+header img {
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 1.3rem;
+    margin-bottom: .9rem;
+}
+
+//footer
+
+footer {
+    background-color: $footer;
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    h2 {
+        font: {
+            family: $titre;
+            size: 1rem;
+            weight: 500;
+        }
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    ul {
+        padding-left: 1rem;
+        li {
+            list-style: none;
+            padding-bottom: .5rem;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .fas {
+                font-size: .8rem;
+                padding-right: .5rem;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    footer {
+        text-align: center;
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+}

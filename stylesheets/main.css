@@ -1,0 +1,260 @@
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+header img {
+  display: block;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+  margin-bottom: .9rem; }
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 0; }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-left: 1rem; }
+  footer ul {
+    padding-left: 1rem; }
+    footer ul li {
+      list-style: none;
+      padding-bottom: .5rem; }
+      footer ul li a {
+        color: #fff;
+        text-decoration: none; }
+      footer ul li .fas {
+        font-size: .8rem;
+        padding-right: .5rem; }
+
+@media all and (min-width: 768px) {
+  footer {
+    text-align: center; }
+    footer h2 {
+      font-size: 1.25rem; } }
+.localisation div:nth-child(1) {
+  background: #eaeaea;
+  box-shadow: inset 0 0.2rem 0.3rem -0.2rem #a9a9a9; }
+  .localisation div:nth-child(1) .fa-map-marker-alt {
+    display: inline-block;
+    margin-left: 8rem; }
+  .localisation div:nth-child(1) input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: #eaeaea;
+    border: none; }
+    .localisation div:nth-child(1) input::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: black; }
+
+.localisation div:nth-child(2) {
+  background: #f6f6f6;
+  padding-bottom: 3rem; }
+  .localisation div:nth-child(2) h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 0 3rem 0 3rem;
+    text-align: center;
+    padding-top: 2.3rem; }
+  .localisation div:nth-child(2) p {
+    margin-top: .8rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.3rem;
+    margin-bottom: 2rem; }
+  .localisation div:nth-child(2) button {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    display: block;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    border-radius: 1.5rem;
+    margin: auto;
+    box-shadow: 0 0.3rem 0.7rem gainsboro;
+    margin-bottom: .5rem; }
+    .localisation div:nth-child(2) button:hover {
+      box-shadow: 0 0.6rem 0.4rem #a9a9a9;
+      background: linear-gradient(#ff93e1, #a16be0); }
+
+@media all and (min-width: 768px) {
+  .localisation div:nth-child(1) .fa-map-marker-alt {
+    margin-left: 18rem; } }
+.presentation {
+  margin-top: 3rem; }
+  .presentation h2 {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem; }
+  .presentation div {
+    margin-left: .5rem; }
+    .presentation div button {
+      display: block;
+      color: #000;
+      font-family: "Roboto", sans-serif;
+      background: #f6f6f6;
+      border: none;
+      border-radius: 1.5rem;
+      margin: auto;
+      box-shadow: 0 0.3rem 0.7rem gainsboro;
+      width: 90%;
+      position: relative;
+      padding: 1.7rem 2.5rem 1.7rem 0;
+      margin-bottom: 1.2rem; }
+      .presentation div button .fas {
+        margin-top: .5rem;
+        color: gray;
+        padding-right: 1rem;
+        margin-left: 0; }
+      .presentation div button .fa-mobile-alt {
+        font-size: 1.3rem;
+        font-weight: 600; }
+      .presentation div button .fa-store {
+        color: #9356DC;
+        font-size: 1.1rem; }
+      .presentation div button span {
+        padding-top: 1.5rem;
+        padding-bottom: 1.2rem;
+        font-size: 1rem;
+        font-weight: 500; }
+  .presentation .choisir button:before {
+    content: "1";
+    color: #fff;
+    font-size: .7rem;
+    position: absolute;
+    left: -.5rem;
+    padding: .3rem .5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.2rem;
+    background-color: #9356DC;
+    border-radius: 2rem; }
+  .presentation .composer button:before {
+    content: "2";
+    color: #fff;
+    font-size: .7rem;
+    position: absolute;
+    left: -.5rem;
+    padding: .3rem .5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.2rem;
+    background-color: #9356DC;
+    border-radius: 2rem; }
+  .presentation .deguster button {
+    background-color: #f2eafb; }
+    .presentation .deguster button:before {
+      content: "3";
+      color: #fff;
+      font-size: .7rem;
+      position: absolute;
+      left: -.5rem;
+      padding: .3rem .5rem;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0.2rem;
+      background-color: #9356DC;
+      border-radius: 2rem; }
+
+@media all and (min-width: 768px) {
+  .presentation h2 {
+    text-align: center;
+    font-size: 2rem; } }
+.menus {
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-top: 4rem; }
+  .menus h2 {
+    margin: 2rem .5rem 1.5rem 1rem;
+    padding-top: 3.3rem; }
+  .menus .palette-gout .nouveau, .menus .note-enchantee .nouveau {
+    position: absolute;
+    background-color: #99E2D0;
+    color: #217460;
+    font-size: .8rem;
+    font-weight: 500;
+    right: 1rem;
+    top: 1rem;
+    padding: .5rem; }
+  .menus article {
+    position: relative;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 95%;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.3rem 0.5rem gainsboro; }
+    .menus article a {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    .menus article img {
+      width: 100%;
+      border-radius: 1rem 1rem 0 0; }
+    .menus article h3 {
+      width: 75%;
+      margin: .5rem 0 .4rem 1rem; }
+    .menus article .localite {
+      font-weight: 100;
+      font-size: 1rem;
+      padding-left: 1rem; }
+    .menus article .container-heart {
+      display: inline-block;
+      position: absolute;
+      right: 1rem;
+      bottom: 1.5rem; }
+    .menus article .fa-empty {
+      font-size: 1.5rem;
+      position: relative;
+      -webkit-text-stroke: 1px white; }
+    .menus article .fa-gradient {
+      font-size: 2rem;
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 1px white;
+      -webkit-text-fill-color: transparent;
+      transition: 1s; }
+    .menus article .fa-gradient:hover {
+      opacity: 1;
+      /*si bug, mettre transition; opacity 1s; ds :hover */ }
+
+@media all and (min-width: 768px) {
+  body {
+    font-size: 1.25rem; }
+
+  .menus h2 {
+    text-align: center;
+    font-size: 2rem; }
+  .menus article {
+    width: 92%;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .menus article img {
+      width: 95%; } }
+
+/*# sourceMappingURL=main.css.map */

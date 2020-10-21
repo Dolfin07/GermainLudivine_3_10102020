@@ -1,0 +1,97 @@
+.menus {
+    background-color: $color-bg;
+    width: 100%;
+    margin-top: 4rem;
+    h2 {
+        margin: 2rem .5rem 1.5rem 1rem;
+        padding-top: 3.3rem;
+    }
+    .palette-gout, .note-enchantee {
+        .nouveau {
+            position: absolute;
+            background-color: $tertiary;
+            color: $tertiary-dark;
+            font: {
+                size: .8rem;
+                weight: 500;
+            }
+            right: 1rem;
+            top: 1rem;
+            padding: .5rem;
+        }
+    }
+    article {
+        position: relative;
+        background-color: #fff;
+        border-radius: 1rem;
+        width: 95%;
+        padding-bottom: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 .3rem .5rem $color-shadow;
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+        }
+        h3 {
+            width: 75%;
+            margin: .5rem 0 .4rem 1rem;
+        }
+        .localite {
+            font-weight:100;
+            font-size: 1rem;
+            padding-left: 1rem;            
+        }
+        .container-heart {
+            display: inline-block;
+            position: absolute;
+            right: 1rem;
+            bottom: 1.5rem
+        }
+        .fa-empty {
+            font-size: 1.5rem;
+            position: relative;
+            -webkit-text-stroke: 1px white;
+        }
+        .fa-gradient {
+            font-size: 2rem;
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 1px white;
+            -webkit-text-fill-color: transparent;
+            transition: 1s;
+        }
+        .fa-gradient:hover {
+            opacity: 1; /*si bug, mettre transition; opacity 1s; ds :hover */
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    
+    body {
+        font-size: 1.25rem;
+    }
+    .menus  {
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        article {
+            width: 92%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+            img {
+                width: 95%;
+            }
+        }
+    }
+}
