@@ -46,10 +46,22 @@ footer {
         padding-right: .5rem; }
 
 @media all and (min-width: 768px) {
+  header {
+    width: 35%; }
+
   footer {
     text-align: center; }
     footer h2 {
+      padding-top: 1rem;
       font-size: 1.25rem; } }
+@media all and (min-width: 768px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer ul li {
+      display: inline-block;
+      width: 20%; } }
 .localisation div:nth-child(1) {
   background: #eaeaea;
   box-shadow: inset 0 0.2rem 0.3rem -0.2rem #a9a9a9; }
@@ -85,7 +97,7 @@ footer {
     margin-bottom: 2rem; }
   .localisation div:nth-child(2) button {
     padding: 1rem 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     display: block;
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -101,7 +113,17 @@ footer {
 
 @media all and (min-width: 768px) {
   .localisation div:nth-child(1) .fa-map-marker-alt {
-    margin-left: 18rem; } }
+    margin-left: 18rem; }
+  .localisation div:nth-child(2) h1 {
+    font-size: 2rem; } }
+@media all and (min-width: 1024px) {
+  .localisation div:nth-child(1) .fa-map-marker-alt {
+    margin-left: 30rem; }
+  .localisation div:nth-child(1) input {
+    margin-top: 2rem;
+    padding-top: .5rem; }
+    .localisation div:nth-child(1) input::placeholder {
+      font-size: 1.4rem; } }
 .presentation {
   margin-top: 3rem; }
   .presentation h2 {
@@ -141,7 +163,7 @@ footer {
   .presentation .choisir button:before {
     content: "1";
     color: #fff;
-    font-size: .7rem;
+    font-size: 0.7rem;
     position: absolute;
     left: -.5rem;
     padding: .3rem .5rem;
@@ -153,7 +175,7 @@ footer {
   .presentation .composer button:before {
     content: "2";
     color: #fff;
-    font-size: .7rem;
+    font-size: 0.7rem;
     position: absolute;
     left: -.5rem;
     padding: .3rem .5rem;
@@ -167,7 +189,7 @@ footer {
     .presentation .deguster button:before {
       content: "3";
       color: #fff;
-      font-size: .7rem;
+      font-size: 0.7rem;
       position: absolute;
       left: -.5rem;
       padding: .3rem .5rem;
@@ -180,7 +202,49 @@ footer {
 @media all and (min-width: 768px) {
   .presentation h2 {
     text-align: center;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .presentation div button {
+    width: 70%; }
+    .presentation div button .fas {
+      font-size: 1.5rem; }
+    .presentation div button span {
+      font-size: 1.3rem; }
+  .presentation .choisir button:before {
+    content: "1";
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    left: -.5rem;
+    padding: .3rem .5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.2rem;
+    background-color: #9356DC;
+    border-radius: 2rem; }
+  .presentation .composer button:before {
+    content: "2";
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    left: -.5rem;
+    padding: .3rem .5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.2rem;
+    background-color: #9356DC;
+    border-radius: 2rem; }
+  .presentation .deguster button:before {
+    content: "3";
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    left: -.5rem;
+    padding: .3rem .5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.2rem;
+    background-color: #9356DC;
+    border-radius: 2rem; } }
 .menus {
   background-color: #f6f6f6;
   width: 100%;
@@ -250,11 +314,26 @@ footer {
     text-align: center;
     font-size: 2rem; }
   .menus article {
-    width: 92%;
-    margin-left: 2rem;
-    margin-right: 2rem; }
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; }
     .menus article img {
-      width: 95%; } }
+      width: 100%; } }
+@media all and (min-width: 1024px) {
+  .menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    justify-content: space-evenly; }
+    .menus h2 {
+      width: 100%;
+      padding-top: 1rem;
+      margin-top: 0; }
+    .menus article {
+      width: 44%;
+      margin: .8rem; } }
 header, footer, section {
   opacity: 0;
   width: 100%;

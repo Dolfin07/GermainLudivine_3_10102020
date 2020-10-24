@@ -1,8 +1,8 @@
-@mixin ajout-chiffre ($chiffre){
+@mixin ajout-chiffre ($chiffre, $font-size){
     &:before {
         content: $chiffre;
         color:#fff;
-        font-size: .7rem;
+        font-size: $font-size;
         position: absolute;
         left: -.5rem;
         padding: .3rem .5rem;
@@ -51,20 +51,40 @@
         }
     }
     .choisir button {
-            @include ajout-chiffre("1");
+            @include ajout-chiffre("1", .7rem);
     }
     .composer button {
-        @include ajout-chiffre("2");
+        @include ajout-chiffre("2", .7rem);
     }
     .deguster button {
-        @include ajout-chiffre("3");
+        @include ajout-chiffre("3", .7rem);
         background-color: $color-bg-light;
     }
 }
 
 @media all and (min-width: 768px) {
-    .presentation h2 {
-        text-align: center;
-        font-size: 2rem;
+    .presentation {
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        div button {
+            width: 70%;
+            .fas {
+                font-size: 1.5rem;
+            }
+            span {
+                font-size: 1.3rem;
+            }
+        }
+        .choisir button {
+            @include ajout-chiffre("1", 1rem);
+        }
+        .composer button {
+            @include ajout-chiffre("2", 1rem);
+        }
+        .deguster button {
+            @include ajout-chiffre("3", 1rem);
+        }
     }
 }

@@ -63,12 +63,32 @@
             font-size: 2rem;
         }
         article {
-            width: 92%;
-        margin-left: 2rem;
-        margin-right: 2rem;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
             img {
-                width: 95%;
+                width: 100%;
             }
         }
     }
+}
+
+@media all and (min-width: 1024px) {
+    .menus {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-bottom: 1rem;
+        justify-content: space-evenly;
+        h2 {
+            width: 100%;
+            padding-top: 1rem;
+            margin-top: 0;
+        }
+        article {
+            width: 44%;
+            margin: .8rem;
+        }
+    }   
 }

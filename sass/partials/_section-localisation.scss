@@ -43,7 +43,7 @@
     }
     button {
         padding: 1rem 1rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
         @include button-color(#fff, $gradient);
         @include button-color-hover;
         margin-bottom: .5rem;
@@ -51,7 +51,27 @@
 }
 
 @media all and (min-width: 768px) {
-    .localisation div:nth-child(1) .fa-map-marker-alt {
+    .localisation {
+        div:nth-child(1) .fa-map-marker-alt {
         margin-left: 18rem;
+        }
+        div:nth-child(2) h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .localisation div:nth-child(1) {
+        .fa-map-marker-alt {
+            margin-left: 30rem;
+        }
+        input {
+            margin-top: 2rem;
+            padding-top: .5rem;
+            &::placeholder {
+            font-size: 1.4rem;
+            }
+        }
     }
 }

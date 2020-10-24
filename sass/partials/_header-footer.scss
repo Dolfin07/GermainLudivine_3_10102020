@@ -8,7 +8,7 @@ header {
     img {
     display: inline-block;
     width: 44%;
-        margin-bottom: -.4rem;
+    margin-bottom: -.4rem;
     }
 }
 
@@ -46,10 +46,29 @@ footer {
 }
 
 @media all and (min-width: 768px) {
+    
+    header {
+        width: 35%;
+    }
     footer {
         text-align: center;
         h2 {
+            padding-top: 1rem;
             font-size: 1.25rem;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    footer {
+        ul {
+        display: flex;
+        flex-direction: row;
+            justify-content: space-evenly;
+            li {
+                display: inline-block;
+                width: 20%;
+            }
         }
     }
 }
