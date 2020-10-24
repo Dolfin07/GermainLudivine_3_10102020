@@ -1,24 +1,24 @@
 @import 'partials/config';
 @import 'partials/button';
-@import 'partials/header-footer';
-@import 'partials/apparition-menu';
 @import 'partials/gradient-heart';
+@import 'partials/apparition-menu';
+@import 'partials/header-footer';
 @import 'partials/card-menu';
 
 main .container {
-    margin-top: -3.8rem;
+    margin-top: -3.5rem;
 }
 
 .plats {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .desserts {
-    margin-top: 1.5rem;
+    margin-top: .8rem;
 }
 
 footer {
-    padding-top: .5rem;
     margin-top: 0;
+    padding-top: 1rem;
     margin-bottom: 0;
 }

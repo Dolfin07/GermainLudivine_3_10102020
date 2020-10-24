@@ -203,17 +203,17 @@ main .container {
       background: linear-gradient(#ff93e1, #a16be0); }
 
 main .container {
-  margin-top: -3.8rem; }
+  margin-top: -3.5rem; }
 
 .plats {
-  margin-top: 1.5rem; }
+  margin-top: 1rem; }
 
 .desserts {
-  margin-top: 1.5rem; }
+  margin-top: .8rem; }
 
 footer {
-  padding-top: .5rem;
   margin-top: 0;
+  padding-top: 1rem;
   margin-bottom: 0; }
 
-/*# sourceMappingURL=note-enchantee.css.map */
+/*# sourceMappingURL=delice-sens.css.map */

@@ -13,16 +13,15 @@
             width: 100%;
             h3 {
                 font-weight: 600;
+                width: 85%;
                 padding-left: .5rem;
                 margin-top: .5rem;
                 margin-bottom: .2rem;
             }
             .info {
                 display: inline-block;
-                width: 90%;
+                width: 85%;
                 padding-left: .5rem;
-                padding-right: 1rem;
-                margin-bottom: .5rem;
                 font-size: .95rem;
             }
             .prix {
@@ -30,9 +29,8 @@
                 display: inline-block;
                 font-weight: bold;
                 font-size: .95rem;
-                right: 0;
-                bottom: .5rem;
-                padding-right: .5rem;
+                right: 1.5rem;
+                bottom: 1rem;
             }
         }
         .container-check {
@@ -41,47 +39,47 @@
                 border-radius: 0 15px 15px 0;
                 width: 0;
                 transition: all 1s;
-
                 .fa-check-circle {
                 color:#fff;
                 display: inline-block;
-                font-size: 1.5rem;
-                padding: 1rem 1.2rem;
+                font-size: 1.2rem;
+                padding: 1.5rem 1rem;
                 transition: transform 800ms;
             }
         }
         &:hover {
             .container-info-plat h3, .container-info-plat .info {
-                width:75%;
+                width:76%;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
             .container-check {
-                width: 20%;
+                width: 18%;
                 .fa-check-circle {
                     transform: rotate(360deg);
                 }
-
             }
         }
     }
 }
 
+
 main {
     img {
         width: 100%;
     }
+    @include apparition-menu;
     .container{
         position: relative;
         background-color: $color-bg;
         border-radius: 40px 40px 0 0;
-        margin-top: -3.7rem;
+        margin-top: -4.5rem;
         padding-bottom: 4rem;
         @include gradient-heart;
         .container-heart {
             top: 2rem;
-            right: 3.5rem;
+            right: 2rem;
             .fa-empty, .fa-gradient {
                 font-size: 1.6rem;
             }
@@ -101,6 +99,7 @@ main {
             overflow: visible;
             border-bottom: 3px solid $tertiary;
             margin-left: 1rem;
+            margin-bottom: 1rem;
             h2 {
                 margin-bottom: 0.3rem;
                 font: {
@@ -119,33 +118,3 @@ main {
         }
     }
 }
-
-
- /* &::after {
-            content: "\f058";
-            font-family: "Font Awesome 5 Free";
-            color:#fff;
-            background-color: $tertiary;
-            display: inline-block;
-            margin-bottom: 0;
-            padding: 0;
-            font-size: 0;
-            width:0%;    
-            border-radius: 0 15px 15px 0;
-            transform: rotate(360deg);
-            transition: all 2s;
-        }
-        &:hover {
-            .container-info-plat {
-                .info  {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-            }
-            &::after {
-                font-size: 1.5rem;
-                padding: 1.4rem;
-                margin-right: -.5%;
-                width:5%;
-            }
-        }*/

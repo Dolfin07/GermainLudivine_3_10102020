@@ -1,0 +1,55 @@
+@mixin apparition-menu {
+    .plat, .container-titre {
+        opacity: 0;
+        animation: 1s forwards linear apparitionMenu;
+    }
+    
+    .am1 {
+        animation-delay: 1s;
+    }
+    .am2 {
+    animation-delay: 1.2s;
+    }
+    .am3 {
+    animation-delay: 1.4s;
+    }
+    .am4 {
+    animation-delay: 1.6s;
+    }
+    .am5 {
+    animation-delay: 1.8s;
+    }
+    .am6 {
+    animation-delay: 2s;
+    }
+    .am7 {
+    animation-delay: 2.2s;
+    }
+    .am8 {
+    animation-delay: 2.4s;
+    }
+    .am9 {
+    animation-delay: 2.6s;
+    }
+    .am10 {
+    animation-delay: 2.8s;
+    }
+    .am11 {
+    animation-delay: 3s;
+    }
+    .am12 {
+    animation-delay: 3.2s;
+    }
+    
+    @keyframes apparitionMenu {
+        0% {
+            opacity: 0;
+            margin-top: 2rem;
+        }
+        100% {
+            opacity: 1;
+            margin-top: 0;
+        }
+    }
+    
+}

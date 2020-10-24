@@ -1,18 +1,14 @@
 //header
 
-header img {
-    display: block;
-    width: 45%;
-    margin: 0 auto;
-    margin-top: 1.3rem;
-    margin-bottom: .9rem;
-}
-
 header {
     .fa-arrow-left {
-        position: absolute;
         font-size: 1.3rem;
-        left: 1rem;
+        margin: 1.5rem 3.5rem 1rem 1rem;
+    }
+    img {
+    display: inline-block;
+    width: 44%;
+        margin-bottom: -.4rem;
     }
 }
 
@@ -21,7 +17,7 @@ header {
 footer {
     background-color: $footer;
     color: #fff;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     margin-top: 4rem;
     margin-bottom: 0;
     h2 {
@@ -30,7 +26,6 @@ footer {
             size: 1rem;
             weight: 500;
         }
-        padding-top: 1rem;
         padding-left: 1rem;
     }
     ul {
