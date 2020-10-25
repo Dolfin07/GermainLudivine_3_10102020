@@ -9,11 +9,14 @@ $tertiary-dark: darken($tertiary, 45%);
 
 $gradient: linear-gradient($secondary, $primary);
 $gradient-light: linear-gradient($secondary-light, $primary-light);
+$gradient-heart: linear-gradient($primary, $secondary);
+
 $color-shadow: lighten(#a9a9a9, 20%);
 $color-shadow-dark: #a9a9a9;
+
 $color-bg: #f6f6f6;
 $color-bg-light: lighten($primary, 35%);
-$gradient-heart: linear-gradient($primary, $secondary);
+
 $footer: #353535;
 
 //Charte typographie
@@ -25,7 +28,7 @@ $texte: 'Roboto', sans-serif;
 //reset
 html {
     font-size: 100%;
-        width: 100%;
+    width: 100%;
 }
 
 body {

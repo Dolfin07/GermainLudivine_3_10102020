@@ -1,7 +1,10 @@
+/*----------------VERSION MOBILE --------------*/
+
 .menus {
     background-color: $color-bg;
     width: 100%;
     margin-top: 4rem;
+    padding-bottom: 3rem;
     h2 {
         margin: 2rem .5rem 1.5rem 1rem;
         padding-top: 3.3rem;
@@ -52,6 +55,8 @@
     }
 }
 
+/*----------------VERSION TABLET --------------*/
+
 @media all and (min-width: 768px) {
     
     body {
@@ -80,6 +85,8 @@
         }
     }
 }
+
+/*----------------VERSION DESKTOP --------------*/
 
 @media all and (min-width: 1024px) {
     .menus {

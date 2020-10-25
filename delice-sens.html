@@ -19,9 +19,19 @@
         </header>
 
         <main>
-            <img src="images/delice-sens-card-menus.jpg" alt="Illustration restaurant Le délice des sens">
-            
+<!--    illustration -->
+            <picture>
+                <source 
+                      media="(max-width: 1023px)" 
+                      srcset="images/delice-sens-card-menus.jpg">
+                <source
+                    media="(min-width: 1024px)"
+                    srcset="images/delice-sens-desktop.jpg">
+                <img src="images/delice-sens-card-menus.jpg" alt="Illustration restaurant Le délice des sens">
+            </picture>
+
             <div class="container">
+<!--    titre        -->
                <h1>Le délice des sens</h1>
                 <div class="container-heart">
                     <i class="far fa-heart fa-empty">
@@ -29,97 +39,128 @@
                     </i>
                 </div>
 <!--ENTREES-->
-                <div class="container-titre entrees am1">
-                <h2>ENTR&#201;ES</h2>
-                </div>
-                
-                <div class="plat am2">
-                    <div class="container-info-plat">
-                        <h3>Tartare de thon</h3>
-                        <div class="info">Assaisonné au yuzu</div>
-                        <div class="prix">25€</div>
+                <div class="entrees">
+                    <div class="container-titre am1">
+                    <h2>ENTR&#201;ES</h2>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
-                </div>
-                <div class="plat am3">
-                    <div class="container-info-plat">
-                        <h3>Bouchée de homard croustillant</h3>
-                        <div class="info">Et sa farandole de petits légumes</div>
-                        <div class="prix">35€</div>
+<!--    entrée 1-->
+                    <div class="plat am2">
+                        <div class="container-info-plat">
+                            <h3>Tartare de thon</h3>
+                            <div class="info">Assaisonné au yuzu</div>
+                            <div class="prix">25€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
-                </div>
-                <div class="plat am4">
-                   <div class="container-info-plat">
-                        <h3>Velouté de cèpes</h3>
-                        <div class="info">Aux truffes</div>
-                        <div class="prix">20€</div>
+<!--    entrée 2-->
+                    <div class="plat am3">
+                        <div class="container-info-plat">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <div class="info">Et sa farandole de petits légumes</div>
+                            <div class="prix">35€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
-                </div>
-    <!--PLATS  -->
-                <div class="container-titre plats am5">
-                    <h2>PLATS</h2>
-                </div>
-                <div class="plat am6">
-                    <div class="container-info-plat">
-                        <h3>Poulet rôti aux herbes de Provence</h3>
-                        <div class="info">Et sa crème de truffe</div>
-                        <div class="prix">40€</div>
+<!--    entrée 3-->
+                    <div class="plat am4">
+                       <div class="container-info-plat">
+                            <h3>Velouté de cèpes</h3>
+                            <div class="info">Aux truffes</div>
+                            <div class="prix">20€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
                 </div>
-
-                <div class="plat am7">
-                    <div class="container-info-plat">
-                        <h3>Langouste rôtie </h3>
-                        <div class="info">Et ses légumes de saison</div>
-                        <div class="prix">35€</div>
+<!--PLATS  -->
+                <div class="plats">
+                    <div class="container-titre am5">
+                        <h2>PLATS</h2>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
-                </div>
-                <div class="plat am8">
-                   <div class="container-info-plat">
-                        <h3>Côte de boeuf Angus</h3>
-                        <div class="info">Et sa purée de panais</div>
-                        <div class="prix">44€</div>
+<!--    plat 1 -->
+                    <div class="plat am6">
+                        <div class="container-info-plat">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <div class="info">Et sa crème de truffe</div>
+                            <div class="prix">40€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
+<!--    plat 2-->
+                    <div class="plat am7">
+                        <div class="container-info-plat">
+                            <h3>Langouste rôtie </h3>
+                            <div class="info">Et ses légumes de saison</div>
+                            <div class="prix">35€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+<!--    plat 3-->
+                    <div class="plat am8">
+                       <div class="container-info-plat">
+                            <h3>Côte de boeuf Angus</h3>
+                            <div class="info">Et sa purée de panais</div>
+                            <div class="prix">44€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
                 </div>
         
 <!--DESSERTS-->
-               <div class="container-titre desserts am9">
-                <h2>DESSERTS</h2>
-                </div>
-                <div class="plat am10">
-                   <div class="container-info-plat">
-                        <h3>Farandole de desserts</h3>
-                        <div class="info">Du chef</div>
-                        <div class="prix">18€</div>
+               <div class="desserts">
+                    <div class="container-titre am9">
+                    <h2>DESSERTS</h2>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
-                </div>
-                <div class="plat am11">
-                    <div class="container-info-plat">
-                        <h3 class="titre-plat">Crème brulée</h3>
-                        <div class="info">Revisitée</div>
-                        <div class="prix">22€</div>
+<!--    dessert 1-->
+                    <div class="plat am10">
+                       <div class="container-info-plat">
+                            <h3>Farandole de desserts</h3>
+                            <div class="info">Du chef</div>
+                            <div class="prix">18€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
-                </div>
-                <div class="plat am12">
-                    <div class="container-info-plat">
-                        <h3>Tiramisu</h3>
-                        <div class="info">À la noisette</div>
-                        <div class="prix">23€</div>
+<!--    dessert 2-->
+                    <div class="plat am11">
+                        <div class="container-info-plat">
+                            <h3 class="titre-plat">Crème brulée</h3>
+                            <div class="info">Revisitée</div>
+                            <div class="prix">22€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="container-check"><i class="fas fa-check-circle"></i></div>
+<!--    dessert 3-->
+                    <div class="plat am12">
+                        <div class="container-info-plat">
+                            <h3>Tiramisu</h3>
+                            <div class="info">À la noisette</div>
+                            <div class="prix">23€</div>
+                        </div>
+                        <div class="container-check">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
                 </div>
-                
                 <button class="btn" >Commander</button>
                 
             </div>
         </main>
+<!--footer-->
         <footer>
         <h2>Ohmyfood</h2>
         <ul>
