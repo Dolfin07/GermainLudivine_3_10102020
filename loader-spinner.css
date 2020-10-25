@@ -1,0 +1,53 @@
+
+/*loader rond défilant */
+
+.loader{
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	background: #9356DC;
+    opacity: 0;
+	top:50%;
+	left: 50%;
+	border-radius: 50%;
+    z-index: 999;
+    animation: 1.5s 2 linear forward;
+}
+
+.loader:nth-of-type(1) {
+    animation-delay: -0.5s;
+}
+
+.loader:nth-of-type(2) {
+    animation-delay: -1s;
+}
+
+.loader:nth-of-type(3) {
+    animation-delay: -1.5s;
+}
+
+.loader:nth-of-type(4) {
+    animation-delay: -2s;
+}
+
+/*keyframes for forward animations*/
+
+@keyframes forward {
+	0% {
+		left: 30%;
+		opacity: 0;
+		background: #FF79DA;
+	}
+	10% {
+		left: 35%;
+		opacity: 0.7;
+	}
+	90% {
+		left: 60%;
+		opacity: 1;
+	}
+	100% {
+		left: 67%;
+		opacity: 0;
+	}
+}
