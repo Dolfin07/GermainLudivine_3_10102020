@@ -136,3 +136,51 @@ main {
         }
     }
 }
+
+@media all and (min-width: 1024px) {
+    main .container {
+        display: flex;
+        flex-wrap: wrap;
+        h1 {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        @include plat(18%, 1rem, 1.5rem, 1.5rem);
+        .entrees, .plats, .desserts {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 32%;
+            margin: 0 .2rem 2rem .4rem;
+
+        }
+        .container-titre {
+            margin-left: 2rem;
+            padding-bottom: 0;
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+        .plat {
+            width: 95%;
+            margin-left: .5rem;
+            margin-bottom: 2rem;
+            .container-info-plat {
+                h3 {
+                    font-size: 1.2rem
+                }
+                .info {
+                    font-size: .9rem;
+                    padding-bottom: .3rem;
+                }
+                .prix {
+                bottom: .5rem;
+                right: 1rem;
+                }
+            }
+        }
+        .btn {
+            margin-top: 1rem;
+        }
+    }
+}

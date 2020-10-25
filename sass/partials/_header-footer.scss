@@ -51,7 +51,7 @@ footer {
         .fa-arrow-left {
             font-size: 2rem;
             margin-left: 4rem;
-            margin-right: 6rem;
+            margin-right: 7rem;
         }
         img {
             padding-top: 1rem;
@@ -69,11 +69,22 @@ footer {
 
 @media all and (min-width: 1024px) {
     header {
+        .fa-arrow-left {
+            font-size: 2rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
         img {
             width: 30%;
         }
     }
     footer {
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding-top: 0;
+        }
         ul {
         display: flex;
         flex-direction: row;
