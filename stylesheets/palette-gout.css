@@ -27,7 +27,6 @@ footer {
   background-color: #353535;
   color: #fff;
   padding-bottom: .5rem;
-  margin-top: 4rem;
   margin-bottom: 0; }
   footer h2 {
     font-family: "Shrikhand", cursive;
@@ -73,7 +72,6 @@ footer {
 
   footer h2 {
     font-size: 1.4rem;
-    margin-top: 1rem;
     margin-bottom: 1rem; }
   footer ul {
     display: flex;

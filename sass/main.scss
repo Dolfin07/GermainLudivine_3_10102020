@@ -6,6 +6,10 @@
 @import 'partials/section-presentation';
 @import 'partials/section-menus';
 
+footer {
+    margin-top: 0;
+}
+
 header, footer, section {
     opacity:0;
     width: 100%;
