@@ -60,7 +60,12 @@
     .menus  {
         h2 {
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.6rem;
+        }
+        .palette-gout, .note-enchantee {
+        .nouveau {
+            font-size: 1rem;
+            }
         }
         article {
             width: 90%;
@@ -68,6 +73,9 @@
             margin-right: 5%;
             img {
                 width: 100%;
+            }
+            h3 {
+                font-size: 1.4rem;
             }
         }
     }

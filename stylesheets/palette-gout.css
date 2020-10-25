@@ -1,5 +1,6 @@
 html {
-  font-size: 100%; }
+  font-size: 100%;
+  width: 100%; }
 
 body {
   font-size: 1rem;
@@ -46,7 +47,12 @@ footer {
         padding-right: .5rem; }
 
 @media all and (min-width: 768px) {
-  header {
+  header .fa-arrow-left {
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-right: 6rem; }
+  header img {
+    padding-top: 1rem;
     width: 35%; }
 
   footer {
@@ -54,7 +60,10 @@ footer {
     footer h2 {
       padding-top: 1rem;
       font-size: 1.25rem; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
+  header img {
+    width: 30%; }
+
   footer ul {
     display: flex;
     flex-direction: row;
@@ -66,31 +75,31 @@ main img {
   width: 100%; }
 main .plat, main .container-titre {
   opacity: 0;
-  animation: 1s forwards linear apparitionMenu; }
+  animation: 2s forwards linear apparitionMenu; }
 main .am1 {
-  animation-delay: 1s; }
+  animation-delay: .5s; }
 main .am2 {
-  animation-delay: 1.2s; }
+  animation-delay: .7s; }
 main .am3 {
-  animation-delay: 1.4s; }
+  animation-delay: .9s; }
 main .am4 {
-  animation-delay: 1.6s; }
+  animation-delay: 1.1s; }
 main .am5 {
-  animation-delay: 1.8s; }
+  animation-delay: 1.3s; }
 main .am6 {
-  animation-delay: 2s; }
+  animation-delay: 1.5s; }
 main .am7 {
-  animation-delay: 2.2s; }
+  animation-delay: 1.7s; }
 main .am8 {
-  animation-delay: 2.4s; }
+  animation-delay: 1.9s; }
 main .am9 {
-  animation-delay: 2.6s; }
+  animation-delay: 2.1s; }
 main .am10 {
-  animation-delay: 2.8s; }
+  animation-delay: 2.3s; }
 main .am11 {
-  animation-delay: 3s; }
+  animation-delay: 2.5s; }
 main .am12 {
-  animation-delay: 3.2s; }
+  animation-delay: 2.7s; }
 @keyframes apparitionMenu {
   0% {
     opacity: 0;
@@ -184,11 +193,10 @@ main .container {
       width: 0;
       transition: all 1s; }
       main .container .plat .container-check .fa-check-circle {
-        color: #fff;
         display: inline-block;
-        font-size: 1.2rem;
-        padding: 1.5rem 1rem;
-        transition: transform 800ms; }
+        color: #f6f6f6;
+        font-size: 0;
+        transition: transform 800ms, color 800ms; }
     main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
       width: 76%;
       white-space: nowrap;
@@ -197,6 +205,9 @@ main .container {
     main .container .plat:hover .container-check {
       width: 18%; }
       main .container .plat:hover .container-check .fa-check-circle {
+        color: #fff;
+        padding: 1.5rem 1rem;
+        font-size: 1.2rem;
         transform: rotate(360deg); }
   main .container .btn {
     padding: 1rem 3rem;
@@ -214,6 +225,67 @@ main .container {
       box-shadow: 0 0.6rem 0.4rem gainsboro;
       background: linear-gradient(#ff93e1, #a16be0); }
 
+@media all and (min-width: 768px) {
+  main .container .plat {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0.3rem 0.7rem gainsboro;
+    padding: 0 .1rem;
+    margin: .9rem; }
+    main .container .plat .container-info-plat {
+      display: inline-block;
+      position: relative;
+      width: 100%; }
+      main .container .plat .container-info-plat h3 {
+        font-weight: 600;
+        width: 85%;
+        padding-left: .5rem;
+        margin-top: .5rem;
+        margin-bottom: .2rem; }
+      main .container .plat .container-info-plat .info {
+        display: inline-block;
+        width: 85%;
+        padding-left: .5rem;
+        font-size: .95rem; }
+      main .container .plat .container-info-plat .prix {
+        position: absolute;
+        display: inline-block;
+        font-weight: bold;
+        font-size: .95rem;
+        right: 1.5rem;
+        bottom: 1rem; }
+    main .container .plat .container-check {
+      margin-right: -.5%;
+      background-color: #99E2D0;
+      border-radius: 0 15px 15px 0;
+      width: 0;
+      transition: all 1s; }
+      main .container .plat .container-check .fa-check-circle {
+        display: inline-block;
+        color: #f6f6f6;
+        font-size: 0;
+        transition: transform 800ms, color 800ms; }
+    main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
+      width: 76%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    main .container .plat:hover .container-check {
+      width: 12%; }
+      main .container .plat:hover .container-check .fa-check-circle {
+        color: #fff;
+        padding: 1rem 1.4rem;
+        font-size: 1.4rem;
+        transform: rotate(360deg); }
+  main .container h1 {
+    margin-left: 4rem; }
+  main .container .plat {
+    width: 80%;
+    margin-left: 4rem; }
+  main .container .container-titre {
+    margin-left: 4rem; } }
 .plats {
   margin-top: .5rem; }
 

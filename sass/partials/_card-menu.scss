@@ -1,4 +1,4 @@
-@mixin plat {
+@mixin plat ($width-check, $padding-checkY, $padding-checkX, $fontsize-check) {
     .plat {
         display: flex;
         justify-content: space-between;
@@ -40,11 +40,10 @@
                 width: 0;
                 transition: all 1s;
                 .fa-check-circle {
-                color:#fff;
                 display: inline-block;
-                font-size: 1.2rem;
-                padding: 1.5rem 1rem;
-                transition: transform 800ms;
+                color: $color-bg;
+                font-size: 0;
+                transition: transform 800ms, color 800ms;
             }
         }
         &:hover {
@@ -55,8 +54,11 @@
                 text-overflow: ellipsis;
             }
             .container-check {
-                width: 18%;
+                width: $width-check;
                 .fa-check-circle {
+                    color:#fff;
+                    padding: $padding-checkY $padding-checkX ;
+                    font-size: $fontsize-check;
                     transform: rotate(360deg);
                 }
             }
@@ -108,13 +110,29 @@ main {
                 }
             }
         } 
-        @include plat;
+        @include plat(18%, 1.5rem, 1rem, 1.2rem);
         .btn {
             padding: 1rem 3rem;
             @include button-color(#fff, $gradient);
             @include button-color-hover;
             font-size: 1rem;
             margin-top: 3rem;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    main .container {
+        @include plat(12%, 1rem, 1.4rem, 1.4rem);
+        h1 {
+            margin-left: 4rem;
+        }
+        .plat {
+            width: 80%;
+            margin-left: 4rem;
+        }
+        .container-titre{
+            margin-left: 4rem;
         }
     }
 }

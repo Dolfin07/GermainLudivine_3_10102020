@@ -1,5 +1,6 @@
 html {
-  font-size: 100%; }
+  font-size: 100%;
+  width: 100%; }
 
 body {
   font-size: 1rem;
@@ -46,7 +47,12 @@ footer {
         padding-right: .5rem; }
 
 @media all and (min-width: 768px) {
-  header {
+  header .fa-arrow-left {
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-right: 6rem; }
+  header img {
+    padding-top: 1rem;
     width: 35%; }
 
   footer {
@@ -54,7 +60,10 @@ footer {
     footer h2 {
       padding-top: 1rem;
       font-size: 1.25rem; } }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
+  header img {
+    width: 30%; }
+
   footer ul {
     display: flex;
     flex-direction: row;
@@ -97,7 +106,7 @@ footer {
     margin-bottom: 2rem; }
   .localisation div:nth-child(2) button {
     padding: 1rem 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: block;
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -115,7 +124,7 @@ footer {
   .localisation div:nth-child(1) .fa-map-marker-alt {
     margin-left: 18rem; }
   .localisation div:nth-child(2) h1 {
-    font-size: 2rem; } }
+    font-size: 1.8rem; } }
 @media all and (min-width: 1024px) {
   .localisation div:nth-child(1) .fa-map-marker-alt {
     margin-left: 30rem; }
@@ -123,7 +132,10 @@ footer {
     margin-top: 2rem;
     padding-top: .5rem; }
     .localisation div:nth-child(1) input::placeholder {
-      font-size: 1.4rem; } }
+      font-size: 1.2rem; }
+
+  .localisation div:nth-child(2) p {
+    font-size: 1.2rem; } }
 .presentation {
   margin-top: 3rem; }
   .presentation h2 {
@@ -151,7 +163,8 @@ footer {
         margin-left: 0; }
       .presentation div button .fa-mobile-alt {
         font-size: 1.3rem;
-        font-weight: 600; }
+        font-weight: 600;
+        padding-left: 1rem; }
       .presentation div button .fa-store {
         color: #9356DC;
         font-size: 1.1rem; }
@@ -166,8 +179,8 @@ footer {
     font-size: 0.7rem;
     position: absolute;
     left: -.5rem;
-    padding: .3rem .5rem;
-    margin-left: 0;
+    padding: 0.3rem 0.5rem;
+    margin-left: -.3rem;
     margin-right: 0;
     margin-top: 0.2rem;
     background-color: #9356DC;
@@ -178,8 +191,8 @@ footer {
     font-size: 0.7rem;
     position: absolute;
     left: -.5rem;
-    padding: .3rem .5rem;
-    margin-left: 0;
+    padding: 0.3rem 0.5rem;
+    margin-left: -.3rem;
     margin-right: 0;
     margin-top: 0.2rem;
     background-color: #9356DC;
@@ -192,8 +205,8 @@ footer {
       font-size: 0.7rem;
       position: absolute;
       left: -.5rem;
-      padding: .3rem .5rem;
-      margin-left: 0;
+      padding: 0.3rem 0.5rem;
+      margin-left: -.3rem;
       margin-right: 0;
       margin-top: 0.2rem;
       background-color: #9356DC;
@@ -202,11 +215,13 @@ footer {
 @media all and (min-width: 768px) {
   .presentation h2 {
     text-align: center;
-    font-size: 2rem; }
+    font-size: 1.6rem; }
   .presentation div button {
     width: 70%; }
     .presentation div button .fas {
       font-size: 1.5rem; }
+    .presentation div button .fa-mobile-alt {
+      padding-left: 1.5rem; }
     .presentation div button span {
       font-size: 1.3rem; }
   .presentation .choisir button:before {
@@ -215,8 +230,8 @@ footer {
     font-size: 1rem;
     position: absolute;
     left: -.5rem;
-    padding: .3rem .5rem;
-    margin-left: 0;
+    padding: 0.5rem 0.8rem;
+    margin-left: -.3rem;
     margin-right: 0;
     margin-top: 0.2rem;
     background-color: #9356DC;
@@ -227,8 +242,8 @@ footer {
     font-size: 1rem;
     position: absolute;
     left: -.5rem;
-    padding: .3rem .5rem;
-    margin-left: 0;
+    padding: 0.5rem 0.8rem;
+    margin-left: -.3rem;
     margin-right: 0;
     margin-top: 0.2rem;
     background-color: #9356DC;
@@ -239,8 +254,8 @@ footer {
     font-size: 1rem;
     position: absolute;
     left: -.5rem;
-    padding: .3rem .5rem;
-    margin-left: 0;
+    padding: 0.5rem 0.8rem;
+    margin-left: -.3rem;
     margin-right: 0;
     margin-top: 0.2rem;
     background-color: #9356DC;
@@ -312,13 +327,17 @@ footer {
 
   .menus h2 {
     text-align: center;
-    font-size: 2rem; }
+    font-size: 1.6rem; }
+  .menus .palette-gout .nouveau, .menus .note-enchantee .nouveau {
+    font-size: 1rem; }
   .menus article {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%; }
     .menus article img {
-      width: 100%; } }
+      width: 100%; }
+    .menus article h3 {
+      font-size: 1.4rem; } }
 @media all and (min-width: 1024px) {
   .menus {
     display: flex;

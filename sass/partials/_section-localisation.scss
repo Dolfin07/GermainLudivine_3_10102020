@@ -43,7 +43,7 @@
     }
     button {
         padding: 1rem 1rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         @include button-color(#fff, $gradient);
         @include button-color-hover;
         margin-bottom: .5rem;
@@ -56,7 +56,7 @@
         margin-left: 18rem;
         }
         div:nth-child(2) h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 }
@@ -70,8 +70,13 @@
             margin-top: 2rem;
             padding-top: .5rem;
             &::placeholder {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             }
+        }
+    }
+    .localisation div:nth-child(2) {
+        p {
+            font-size: 1.2rem;
         }
     }
 }
