@@ -1,9 +1,9 @@
 .localisation div:nth-child(1) {
     background: #eaeaea;
     box-shadow: inset 0 .2rem .3rem -.2rem $color-shadow-dark;
+    text-align: center;
     .fa-map-marker-alt {
         display: inline-block;
-        margin-left: 8rem;
     }
     input {
         margin-top: 1rem;
@@ -24,22 +24,20 @@
 .localisation div:nth-child(2) {
     background: $color-bg;
     padding-bottom: 3rem;
+    text-align: center;
     h1 {
         font: {
             weight: 900;
             size: 1.5rem;
         }
         margin: 0 3rem 0 3rem;
-        text-align: center;
         padding-top: 2.3rem;
     }
     p {
-        margin-top: .8rem;;
+        margin: .8rem .5rem 2rem .5rem;
         font-size: 1.1rem;
         font-weight: 100;
-        text-align: center;
         line-height: 1.3rem;
-        margin-bottom: 2rem;
     }
     button {
         padding: 1rem 1rem;
@@ -51,28 +49,18 @@
 }
 
 @media all and (min-width: 768px) {
-    .localisation {
-        div:nth-child(1) .fa-map-marker-alt {
-        margin-left: 18rem;
-        }
-        div:nth-child(2) h1 {
+    .localisation div:nth-child(2) h1 {
             font-size: 1.8rem;
-        }
     }
 }
 
 @media all and (min-width: 1024px) {
-    .localisation div:nth-child(1) {
-        .fa-map-marker-alt {
-            margin-left: 30rem;
-        }
-        input {
+    .localisation div:nth-child(1) input {
             margin-top: 2rem;
             padding-top: .5rem;
             &::placeholder {
             font-size: 1.2rem;
             }
-        }
     }
     .localisation div:nth-child(2) {
         p {

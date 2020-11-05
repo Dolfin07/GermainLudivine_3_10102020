@@ -27,13 +27,13 @@ footer {
   background-color: #353535;
   color: #fff;
   padding-bottom: .5rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-top: .5rem; }
   footer h2 {
     font-family: "Shrikhand", cursive;
     font-size: 1rem;
     font-weight: 500;
-    padding-left: 1rem;
-    margin-top: 1rem; }
+    padding-left: 1rem; }
   footer ul {
     padding-left: 1rem; }
     footer ul li {
@@ -82,10 +82,10 @@ footer {
       width: 20%; } }
 .localisation div:nth-child(1) {
   background: #eaeaea;
-  box-shadow: inset 0 0.2rem 0.3rem -0.2rem #a9a9a9; }
+  box-shadow: inset 0 0.2rem 0.3rem -0.2rem #a9a9a9;
+  text-align: center; }
   .localisation div:nth-child(1) .fa-map-marker-alt {
-    display: inline-block;
-    margin-left: 8rem; }
+    display: inline-block; }
   .localisation div:nth-child(1) input {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -99,20 +99,18 @@ footer {
 
 .localisation div:nth-child(2) {
   background: #f6f6f6;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  text-align: center; }
   .localisation div:nth-child(2) h1 {
     font-weight: 900;
     font-size: 1.5rem;
     margin: 0 3rem 0 3rem;
-    text-align: center;
     padding-top: 2.3rem; }
   .localisation div:nth-child(2) p {
-    margin-top: .8rem;
+    margin: .8rem .5rem 2rem .5rem;
     font-size: 1.1rem;
     font-weight: 100;
-    text-align: center;
-    line-height: 1.3rem;
-    margin-bottom: 2rem; }
+    line-height: 1.3rem; }
   .localisation div:nth-child(2) button {
     padding: 1rem 1rem;
     font-size: 1.2rem;
@@ -126,17 +124,15 @@ footer {
     box-shadow: 0 0.3rem 0.7rem gainsboro;
     margin-bottom: .5rem; }
     .localisation div:nth-child(2) button:hover {
+      cursor: pointer;
       box-shadow: 0 0.6rem 0.4rem gainsboro;
-      background: linear-gradient(#ff93e1, #a16be0); }
+      background: linear-gradient(#ff93e1, #a16be0);
+      transition: background 3s; }
 
 @media all and (min-width: 768px) {
-  .localisation div:nth-child(1) .fa-map-marker-alt {
-    margin-left: 18rem; }
   .localisation div:nth-child(2) h1 {
     font-size: 1.8rem; } }
 @media all and (min-width: 1024px) {
-  .localisation div:nth-child(1) .fa-map-marker-alt {
-    margin-left: 30rem; }
   .localisation div:nth-child(1) input {
     margin-top: 2rem;
     padding-top: .5rem; }
@@ -293,7 +289,7 @@ footer {
     border-radius: 1rem;
     width: 95%;
     padding-bottom: 1rem;
-    margin-left: 1rem;
+    margin-left: .5rem;
     margin-bottom: 1rem;
     box-shadow: 0 0.3rem 0.5rem gainsboro; }
     .menus article a {
@@ -330,7 +326,8 @@ footer {
         -webkit-text-fill-color: transparent; }
       .menus article .container-heart .fa-gradient:hover {
         opacity: 1;
-        transition: opacity 1.5s; }
+        transition: opacity 1.5s;
+        cursor: pointer; }
 
 /*----------------VERSION TABLET --------------*/
 @media all and (min-width: 768px) {

@@ -27,13 +27,13 @@ footer {
   background-color: #353535;
   color: #fff;
   padding-bottom: .5rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-top: .5rem; }
   footer h2 {
     font-family: "Shrikhand", cursive;
     font-size: 1rem;
     font-weight: 500;
-    padding-left: 1rem;
-    margin-top: 1rem; }
+    padding-left: 1rem; }
   footer ul {
     padding-left: 1rem; }
     footer ul li {
@@ -148,7 +148,8 @@ main .container {
       -webkit-text-fill-color: transparent; }
     main .container .container-heart .fa-gradient:hover {
       opacity: 1;
-      transition: opacity 1.5s; }
+      transition: opacity 1.5s;
+      cursor: pointer; }
   main .container .container-heart {
     top: 2rem;
     right: 2rem; }
@@ -162,7 +163,7 @@ main .container {
     font-size: 1.7rem; }
   main .container .container-titre {
     display: inline-block;
-    width: 45px;
+    width: 38px;
     overflow: visible;
     border-bottom: 3px solid #99E2D0;
     margin-left: 1rem;
@@ -177,48 +178,63 @@ main .container {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0.3rem 0.7rem gainsboro;
-    padding: 0 .1rem;
-    margin: .9rem; }
+    margin: 1rem;
+    overflow: hidden;
+    /*.container-check {
+            margin-right: -.5%;
+            background-color: $tertiary;
+            border-radius: 0 15px 15px 0;
+            width: 0;
+            transition: all 1s;
+            .fa-check-circle {
+            display: inline-block;
+            color: $color-bg;
+            font-size: 0;
+            transition: transform 800ms, color 800ms;
+        } */ }
     main .container .plat .container-info-plat {
       display: inline-block;
       position: relative;
-      width: 100%; }
+      padding: 1rem;
+      width: 100%;
+      border: 2px solid red; }
       main .container .plat .container-info-plat h3 {
         font-weight: 600;
-        width: 85%;
-        padding-left: .5rem;
-        margin-top: .5rem;
-        margin-bottom: .2rem; }
+        width: 92%;
+        margin: 0; }
       main .container .plat .container-info-plat .info {
         display: inline-block;
-        width: 85%;
-        padding-left: .5rem;
+        width: 92%;
         font-size: .95rem; }
       main .container .plat .container-info-plat .prix {
         position: absolute;
         display: inline-block;
         font-weight: bold;
         font-size: .95rem;
-        right: 1.5rem;
-        bottom: 1rem; }
+        bottom: 1rem;
+        right: .5rem; }
     main .container .plat .container-check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-right: -.5%;
       background-color: #99E2D0;
       border-radius: 0 15px 15px 0;
-      width: 0;
-      transition: all 1s; }
+      transform: translateX(100%); }
       main .container .plat .container-check .fa-check-circle {
-        display: inline-block;
+        width: 0;
         color: #f6f6f6;
-        font-size: 0;
+        font-size: 1.2rem;
         transition: transform 800ms, color 800ms; }
     main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
-      width: 76%;
+      width: 75%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
     main .container .plat:hover .container-check {
-      width: 18%; }
+      transform: translateX(0);
+      transition: transform 800ms;
+      width: 25%; }
       main .container .plat:hover .container-check .fa-check-circle {
         color: #fff;
         padding: 1.5rem 1rem;
@@ -237,8 +253,10 @@ main .container {
     font-size: 1rem;
     margin-top: 3rem; }
     main .container .btn:hover {
+      cursor: pointer;
       box-shadow: 0 0.6rem 0.4rem gainsboro;
-      background: linear-gradient(#ff93e1, #a16be0); }
+      background: linear-gradient(#ff93e1, #a16be0);
+      transition: background 3s; }
 
 /*-------------------- VERSION TABLET-------------------*/
 @media all and (min-width: 768px) {
@@ -248,48 +266,63 @@ main .container {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0.3rem 0.7rem gainsboro;
-    padding: 0 .1rem;
-    margin: .9rem; }
+    margin: 1rem;
+    overflow: hidden;
+    /*.container-check {
+            margin-right: -.5%;
+            background-color: $tertiary;
+            border-radius: 0 15px 15px 0;
+            width: 0;
+            transition: all 1s;
+            .fa-check-circle {
+            display: inline-block;
+            color: $color-bg;
+            font-size: 0;
+            transition: transform 800ms, color 800ms;
+        } */ }
     main .container .plat .container-info-plat {
       display: inline-block;
       position: relative;
-      width: 100%; }
+      padding: 1rem;
+      width: 100%;
+      border: 2px solid red; }
       main .container .plat .container-info-plat h3 {
         font-weight: 600;
-        width: 85%;
-        padding-left: .5rem;
-        margin-top: .5rem;
-        margin-bottom: .2rem; }
+        width: 92%;
+        margin: 0; }
       main .container .plat .container-info-plat .info {
         display: inline-block;
-        width: 85%;
-        padding-left: .5rem;
+        width: 92%;
         font-size: .95rem; }
       main .container .plat .container-info-plat .prix {
         position: absolute;
         display: inline-block;
         font-weight: bold;
         font-size: .95rem;
-        right: 1.5rem;
-        bottom: 1rem; }
+        bottom: 1rem;
+        right: .5rem; }
     main .container .plat .container-check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-right: -.5%;
       background-color: #99E2D0;
       border-radius: 0 15px 15px 0;
-      width: 0;
-      transition: all 1s; }
+      transform: translateX(100%); }
       main .container .plat .container-check .fa-check-circle {
-        display: inline-block;
+        width: 0;
         color: #f6f6f6;
-        font-size: 0;
+        font-size: 1.4rem;
         transition: transform 800ms, color 800ms; }
     main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
-      width: 76%;
+      width: 75%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
     main .container .plat:hover .container-check {
-      width: 12%; }
+      transform: translateX(0);
+      transition: transform 800ms;
+      width: 25%; }
       main .container .plat:hover .container-check .fa-check-circle {
         color: #fff;
         padding: 1rem 1.4rem;
@@ -316,48 +349,63 @@ main .container {
       background-color: #fff;
       border-radius: 15px;
       box-shadow: 0 0.3rem 0.7rem gainsboro;
-      padding: 0 .1rem;
-      margin: .9rem; }
+      margin: 1rem;
+      overflow: hidden;
+      /*.container-check {
+              margin-right: -.5%;
+              background-color: $tertiary;
+              border-radius: 0 15px 15px 0;
+              width: 0;
+              transition: all 1s;
+              .fa-check-circle {
+              display: inline-block;
+              color: $color-bg;
+              font-size: 0;
+              transition: transform 800ms, color 800ms;
+          } */ }
       main .container .plat .container-info-plat {
         display: inline-block;
         position: relative;
-        width: 100%; }
+        padding: 1rem;
+        width: 100%;
+        border: 2px solid red; }
         main .container .plat .container-info-plat h3 {
           font-weight: 600;
-          width: 85%;
-          padding-left: .5rem;
-          margin-top: .5rem;
-          margin-bottom: .2rem; }
+          width: 92%;
+          margin: 0; }
         main .container .plat .container-info-plat .info {
           display: inline-block;
-          width: 85%;
-          padding-left: .5rem;
+          width: 92%;
           font-size: .95rem; }
         main .container .plat .container-info-plat .prix {
           position: absolute;
           display: inline-block;
           font-weight: bold;
           font-size: .95rem;
-          right: 1.5rem;
-          bottom: 1rem; }
+          bottom: 1rem;
+          right: .5rem; }
       main .container .plat .container-check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-right: -.5%;
         background-color: #99E2D0;
         border-radius: 0 15px 15px 0;
-        width: 0;
-        transition: all 1s; }
+        transform: translateX(100%); }
         main .container .plat .container-check .fa-check-circle {
-          display: inline-block;
+          width: 0;
           color: #f6f6f6;
-          font-size: 0;
+          font-size: 1.5rem;
           transition: transform 800ms, color 800ms; }
       main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
-        width: 76%;
+        width: 75%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
       main .container .plat:hover .container-check {
-        width: 18%; }
+        transform: translateX(0);
+        transition: transform 800ms;
+        width: 25%; }
         main .container .plat:hover .container-check .fa-check-circle {
           color: #fff;
           padding: 1rem 1.5rem;

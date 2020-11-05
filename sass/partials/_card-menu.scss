@@ -2,39 +2,40 @@
 @mixin plat ($width-check, $padding-checkY, $padding-checkX, $fontsize-check) {
     .plat {
         display: flex;
-        justify-content: space-between;
         background-color: #fff;
         border-radius: 15px;
         box-shadow: 0 .3rem .7rem $color-shadow;
-        padding: 0 .1rem;
-        margin: .9rem;
+        margin: 1rem;
+        overflow: hidden;
         .container-info-plat {
-            display: inline-block;
             position: relative;
+            padding: 1rem;
             width: 100%;
+            border: 2px solid red;
             h3 {
+                display: inline-block;
+                border: 2px solid blue;
                 font-weight: 600;
-                width: 85%;
-                padding-left: .5rem;
-                margin-top: .5rem;
-                margin-bottom: .2rem;
+                width: 92%;
+                margin: 0;
             }
             .info {
+                border: 2px solid green;
                 display: inline-block;
-                width: 85%;
-                padding-left: .5rem;
+                width: 92%;
                 font-size: .95rem;
             }
             .prix {
+                border: 2px solid pink;
                 position: absolute;
                 display: inline-block;
                 font-weight: bold;
                 font-size: .95rem;
-                right: 1.5rem;
                 bottom: 1rem;
+                right: .5rem;
             }
         }
-        .container-check {
+        /*.container-check {
                 margin-right: -.5%;
                 background-color: $tertiary;
                 border-radius: 0 15px 15px 0;
@@ -45,17 +46,34 @@
                 color: $color-bg;
                 font-size: 0;
                 transition: transform 800ms, color 800ms;
+            } */
+            
+            .container-check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: -.5%;
+                background-color: $tertiary;
+                border-radius: 0 15px 15px 0;
+                transform: translateX(100%);
+                .fa-check-circle {
+                width: 0;
+                color: $color-bg;
+                font-size: $fontsize-check;
+                transition: transform 800ms, color 800ms;
             }
         }
         &:hover {
             .container-info-plat h3, .container-info-plat .info {
-                width:76%;
+                width: 75%;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
             .container-check {
-                width: $width-check;
+                transform: translateX(0);
+                transition: transform 800ms;
+                width: 25%;
                 .fa-check-circle {
                     color:#fff;
                     padding: $padding-checkY $padding-checkX ;
@@ -98,7 +116,7 @@ main {
         }
         .container-titre {
             display: inline-block;
-            width: 45px;
+            width: 38px;
             overflow: visible;
             border-bottom: 3px solid $tertiary;
             margin-left: 1rem;

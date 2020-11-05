@@ -11,7 +11,9 @@
 
 @mixin button-color-hover {
      &:hover {
+        cursor: pointer;
         box-shadow: 0 .6rem .4rem $color-shadow;
         background: $gradient-light;
+        transition: background 3s;
     }
 }
