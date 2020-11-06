@@ -303,44 +303,28 @@ main .container .plat {
           box-shadow: 0 0.3rem 0.7rem gainsboro;
   margin: 1rem;
   overflow: hidden;
-  /*.container-check {
-                margin-right: -.5%;
-                background-color: $tertiary;
-                border-radius: 0 15px 15px 0;
-                width: 0;
-                transition: all 1s;
-                .fa-check-circle {
-                display: inline-block;
-                color: $color-bg;
-                font-size: 0;
-                transition: transform 800ms, color 800ms;
-            } */
 }
 
 main .container .plat .container-info-plat {
   position: relative;
   padding: 1rem;
   width: 100%;
-  border: 2px solid red;
 }
 
 main .container .plat .container-info-plat h3 {
   display: inline-block;
-  border: 2px solid blue;
   font-weight: 600;
   width: 92%;
   margin: 0;
 }
 
 main .container .plat .container-info-plat .info {
-  border: 2px solid green;
   display: inline-block;
   width: 92%;
   font-size: .95rem;
 }
 
 main .container .plat .container-info-plat .prix {
-  border: 2px solid pink;
   position: absolute;
   display: inline-block;
   font-weight: bold;
@@ -370,35 +354,42 @@ main .container .plat .container-check .fa-check-circle {
   width: 0;
   color: #f6f6f6;
   font-size: 1.2rem;
-  -webkit-transition: color 800ms, -webkit-transform 800ms;
-  transition: color 800ms, -webkit-transform 800ms;
-  transition: transform 800ms, color 800ms;
-  transition: transform 800ms, color 800ms, -webkit-transform 800ms;
+  -webkit-transition: color 400ms, -webkit-transform 400ms;
+  transition: color 400ms, -webkit-transform 400ms;
+  transition: transform 400ms, color 400ms;
+  transition: transform 400ms, color 400ms, -webkit-transform 400ms;
+}
+
+main .container .plat:hover .container-info-plat {
+  width: 85%;
+  max-height: 4.5rem;
 }
 
 main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
-  width: 75%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+main .container .plat:hover .container-info-plat .prix {
+  bottom: 1.2rem;
+}
+
 main .container .plat:hover .container-check {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform 800ms;
-  transition: -webkit-transform 800ms;
-  transition: transform 800ms;
-  transition: transform 800ms, -webkit-transform 800ms;
-  width: 25%;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+  width: 18%;
 }
 
 main .container .plat:hover .container-check .fa-check-circle {
   color: #fff;
-  padding: 1.5rem 1rem;
   font-size: 1.2rem;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(-720deg);
+          transform: rotate(-720deg);
 }
 
 main .container .btn {
@@ -439,40 +430,24 @@ main .container .btn:hover {
             box-shadow: 0 0.3rem 0.7rem gainsboro;
     margin: 1rem;
     overflow: hidden;
-    /*.container-check {
-                margin-right: -.5%;
-                background-color: $tertiary;
-                border-radius: 0 15px 15px 0;
-                width: 0;
-                transition: all 1s;
-                .fa-check-circle {
-                display: inline-block;
-                color: $color-bg;
-                font-size: 0;
-                transition: transform 800ms, color 800ms;
-            } */
   }
   main .container .plat .container-info-plat {
     position: relative;
     padding: 1rem;
     width: 100%;
-    border: 2px solid red;
   }
   main .container .plat .container-info-plat h3 {
     display: inline-block;
-    border: 2px solid blue;
     font-weight: 600;
     width: 92%;
     margin: 0;
   }
   main .container .plat .container-info-plat .info {
-    border: 2px solid green;
     display: inline-block;
     width: 92%;
     font-size: .95rem;
   }
   main .container .plat .container-info-plat .prix {
-    border: 2px solid pink;
     position: absolute;
     display: inline-block;
     font-weight: bold;
@@ -500,32 +475,37 @@ main .container .btn:hover {
     width: 0;
     color: #f6f6f6;
     font-size: 1.4rem;
-    -webkit-transition: color 800ms, -webkit-transform 800ms;
-    transition: color 800ms, -webkit-transform 800ms;
-    transition: transform 800ms, color 800ms;
-    transition: transform 800ms, color 800ms, -webkit-transform 800ms;
+    -webkit-transition: color 400ms, -webkit-transform 400ms;
+    transition: color 400ms, -webkit-transform 400ms;
+    transition: transform 400ms, color 400ms;
+    transition: transform 400ms, color 400ms, -webkit-transform 400ms;
+  }
+  main .container .plat:hover .container-info-plat {
+    width: 85%;
+    max-height: 4.5rem;
   }
   main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
-    width: 75%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  main .container .plat:hover .container-info-plat .prix {
+    bottom: 1.2rem;
+  }
   main .container .plat:hover .container-check {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    -webkit-transition: -webkit-transform 800ms;
-    transition: -webkit-transform 800ms;
-    transition: transform 800ms;
-    transition: transform 800ms, -webkit-transform 800ms;
-    width: 25%;
+    -webkit-transition: -webkit-transform 600ms;
+    transition: -webkit-transform 600ms;
+    transition: transform 600ms;
+    transition: transform 600ms, -webkit-transform 600ms;
+    width: 12%;
   }
   main .container .plat:hover .container-check .fa-check-circle {
     color: #fff;
-    padding: 1rem 1.4rem;
     font-size: 1.4rem;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
   }
   main .container h1 {
     margin-left: 4rem;
@@ -562,40 +542,24 @@ main .container .btn:hover {
             box-shadow: 0 0.3rem 0.7rem gainsboro;
     margin: 1rem;
     overflow: hidden;
-    /*.container-check {
-                margin-right: -.5%;
-                background-color: $tertiary;
-                border-radius: 0 15px 15px 0;
-                width: 0;
-                transition: all 1s;
-                .fa-check-circle {
-                display: inline-block;
-                color: $color-bg;
-                font-size: 0;
-                transition: transform 800ms, color 800ms;
-            } */
   }
   main .container .plat .container-info-plat {
     position: relative;
     padding: 1rem;
     width: 100%;
-    border: 2px solid red;
   }
   main .container .plat .container-info-plat h3 {
     display: inline-block;
-    border: 2px solid blue;
     font-weight: 600;
     width: 92%;
     margin: 0;
   }
   main .container .plat .container-info-plat .info {
-    border: 2px solid green;
     display: inline-block;
     width: 92%;
     font-size: .95rem;
   }
   main .container .plat .container-info-plat .prix {
-    border: 2px solid pink;
     position: absolute;
     display: inline-block;
     font-weight: bold;
@@ -623,32 +587,37 @@ main .container .btn:hover {
     width: 0;
     color: #f6f6f6;
     font-size: 1.5rem;
-    -webkit-transition: color 800ms, -webkit-transform 800ms;
-    transition: color 800ms, -webkit-transform 800ms;
-    transition: transform 800ms, color 800ms;
-    transition: transform 800ms, color 800ms, -webkit-transform 800ms;
+    -webkit-transition: color 400ms, -webkit-transform 400ms;
+    transition: color 400ms, -webkit-transform 400ms;
+    transition: transform 400ms, color 400ms;
+    transition: transform 400ms, color 400ms, -webkit-transform 400ms;
+  }
+  main .container .plat:hover .container-info-plat {
+    width: 85%;
+    max-height: 4.5rem;
   }
   main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
-    width: 75%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  main .container .plat:hover .container-info-plat .prix {
+    bottom: 1.2rem;
+  }
   main .container .plat:hover .container-check {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    -webkit-transition: -webkit-transform 800ms;
-    transition: -webkit-transform 800ms;
-    transition: transform 800ms;
-    transition: transform 800ms, -webkit-transform 800ms;
-    width: 25%;
+    -webkit-transition: -webkit-transform 600ms;
+    transition: -webkit-transform 600ms;
+    transition: transform 600ms;
+    transition: transform 600ms, -webkit-transform 600ms;
+    width: 22%;
   }
   main .container .plat:hover .container-check .fa-check-circle {
     color: #fff;
-    padding: 1rem 1.5rem;
     font-size: 1.5rem;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
   }
   main .container .entrees, main .container .plats, main .container .desserts {
     display: -webkit-inline-box;
@@ -677,14 +646,13 @@ main .container .btn:hover {
     margin-bottom: 2rem;
   }
   main .container .plat .container-info-plat h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   main .container .plat .container-info-plat .info {
-    font-size: .9rem;
+    font-size: .8rem;
     padding-bottom: .3rem;
   }
   main .container .plat .container-info-plat .prix {
-    bottom: .5rem;
     right: 1rem;
   }
   main .container .btn {

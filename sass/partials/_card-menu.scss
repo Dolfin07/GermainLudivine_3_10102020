@@ -1,5 +1,5 @@
 /*-------------------MIXIN ossature carte ---------------*/
-@mixin plat ($width-check, $padding-checkY, $padding-checkX, $fontsize-check) {
+@mixin plat ($width-check, $fontsize-check) {
     .plat {
         display: flex;
         background-color: #fff;
@@ -11,22 +11,18 @@
             position: relative;
             padding: 1rem;
             width: 100%;
-            border: 2px solid red;
             h3 {
                 display: inline-block;
-                border: 2px solid blue;
                 font-weight: 600;
                 width: 92%;
                 margin: 0;
             }
             .info {
-                border: 2px solid green;
                 display: inline-block;
                 width: 92%;
                 font-size: .95rem;
             }
             .prix {
-                border: 2px solid pink;
                 position: absolute;
                 display: inline-block;
                 font-weight: bold;
@@ -35,50 +31,42 @@
                 right: .5rem;
             }
         }
-        /*.container-check {
-                margin-right: -.5%;
-                background-color: $tertiary;
-                border-radius: 0 15px 15px 0;
-                width: 0;
-                transition: all 1s;
-                .fa-check-circle {
-                display: inline-block;
-                color: $color-bg;
-                font-size: 0;
-                transition: transform 800ms, color 800ms;
-            } */
-            
-            .container-check {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: -.5%;
-                background-color: $tertiary;
-                border-radius: 0 15px 15px 0;
-                transform: translateX(100%);
-                .fa-check-circle {
+        .container-check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -.5%;
+            background-color: $tertiary;
+            border-radius: 0 15px 15px 0;
+            transform: translateX(100%);
+            .fa-check-circle {
                 width: 0;
                 color: $color-bg;
                 font-size: $fontsize-check;
-                transition: transform 800ms, color 800ms;
+                transition: transform 400ms, color 400ms;
             }
         }
         &:hover {
-            .container-info-plat h3, .container-info-plat .info {
-                width: 75%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+            .container-info-plat {
+                width: 85%;
+                max-height: 4.5rem;
+                h3, .info {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .prix {
+                    bottom: 1.2rem;
+                }
             }
             .container-check {
                 transform: translateX(0);
-                transition: transform 800ms;
-                width: 25%;
+                transition: transform 600ms;
+                width: $width-check;
                 .fa-check-circle {
                     color:#fff;
-                    padding: $padding-checkY $padding-checkX ;
                     font-size: $fontsize-check;
-                    transform: rotate(360deg);
+                    transform: rotate(-720deg);
                 }
             }
         }
@@ -129,7 +117,7 @@ main {
                 }
             }
         } 
-        @include plat(18%, 1.5rem, 1rem, 1.2rem);
+        @include plat(18%, 1.2rem);
         .btn {
             padding: 1rem 3rem;
             @include button-color(#fff, $gradient);
@@ -144,7 +132,7 @@ main {
 
 @media all and (min-width: 768px) {
     main .container {
-        @include plat(12%, 1rem, 1.4rem, 1.4rem);
+        @include plat(12%, 1.4rem);
         h1 {
             margin-left: 4rem;
         }
@@ -168,7 +156,7 @@ main {
             width: 100%;
             margin-left: 2rem;
         }
-        @include plat(18%, 1rem, 1.5rem, 1.5rem);
+        @include plat(22%, 1.5rem);
         .entrees, .plats, .desserts {
             display: inline-flex;
             flex-direction: column;
@@ -190,14 +178,13 @@ main {
             margin-bottom: 2rem;
             .container-info-plat {
                 h3 {
-                    font-size: 1.2rem
+                    font-size: 1.1rem
                 }
                 .info {
-                    font-size: .9rem;
+                    font-size: .8rem;
                     padding-bottom: .3rem;
                 }
                 .prix {
-                bottom: .5rem;
                 right: 1rem;
                 }
             }
