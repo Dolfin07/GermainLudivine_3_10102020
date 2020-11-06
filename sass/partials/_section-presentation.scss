@@ -1,5 +1,5 @@
 @mixin ajout-chiffre ($chiffre, $font-size, $marginX, $marginY){
-    &:before {
+    &::before {
         content: $chiffre;
         color:#fff;
         font-size: $font-size;
@@ -52,7 +52,7 @@
         }
     }
     .choisir button {
-            @include ajout-chiffre("1", .7rem, .3rem, .5rem);
+        @include ajout-chiffre("1", .7rem, .3rem, .5rem);
     }
     .composer button {
         @include ajout-chiffre("2", .7rem, .3rem, .5rem);
