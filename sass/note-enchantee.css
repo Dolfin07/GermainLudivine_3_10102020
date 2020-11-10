@@ -386,6 +386,7 @@ main .container .plat:hover .container-check {
 }
 
 main .container .plat:hover .container-check .fa-check-circle {
+  margin-right: 1.4rem;
   color: #fff;
   font-size: 1.2rem;
   -webkit-transform: rotate(-720deg);
