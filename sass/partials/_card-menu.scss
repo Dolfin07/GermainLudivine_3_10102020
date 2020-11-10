@@ -64,6 +64,7 @@
                 transition: transform 600ms;
                 width: $width-check;
                 .fa-check-circle {
+                    margin-right: 1.4rem;
                     color:#fff;
                     font-size: $fontsize-check;
                     transform: rotate(-720deg);
