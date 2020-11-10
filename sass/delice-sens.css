@@ -351,6 +351,7 @@ main .container .plat .container-check {
 }
 
 main .container .plat .container-check .fa-check-circle {
+  margin-right: 1.4rem;
   width: 0;
   color: #f6f6f6;
   font-size: 1.2rem;
