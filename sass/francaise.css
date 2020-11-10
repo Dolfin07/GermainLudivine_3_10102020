@@ -481,7 +481,6 @@ main .container .btn:hover {
     transition: transform 400ms, color 400ms, -webkit-transform 400ms;
   }
   main .container .plat:hover .container-info-plat {
-    width: 85%;
     max-height: 4.5rem;
   }
   main .container .plat:hover .container-info-plat h3, main .container .plat:hover .container-info-plat .info {
